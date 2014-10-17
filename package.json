@@ -1,0 +1,11 @@
+{
+  "name": "beagle-altmetric",
+  "version": "0.0.0",
+  "description": "Call the altmetric API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Richard Littauer <richard.littauer@gmail.com>",
+  "license": "ISC"
+}
