@@ -7,5 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Richard Littauer <richard.littauer@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "accum-transform": "^1.0.2",
+    "request": "^2.45.0",
+    "through2": "^0.6.3"
+  }
 }
