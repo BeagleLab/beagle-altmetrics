@@ -1,17 +1,30 @@
 {
-  "name": "beagle-altmetric",
-  "version": "0.0.0",
+  "name": "beagle-altmetrics",
+  "version": "0.0.1",
   "description": "Call the altmetric API",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Richard Littauer <richard.littauer@gmail.com>",
-  "license": "ISC",
+  "author": "Richard Littauer <<richard.littauer@gmail.com>",
+  "license": "MIT",
   "devDependencies": {},
   "dependencies": {
     "accum-transform": "^1.0.2",
     "request": "^2.45.0",
     "through2": "^0.6.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BeagleLab/beagle-altmetrics.git"
+  },
+  "keywords": [
+    "beagle",
+    "altmetrics",
+    "doi"
+  ],
+  "bugs": {
+    "url": "https://github.com/BeagleLab/beagle-altmetrics/issues"
+  },
+  "homepage": "https://github.com/BeagleLab/beagle-altmetrics"
 }
