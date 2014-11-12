@@ -11,7 +11,7 @@
   "devDependencies": {},
   "dependencies": {
     "accum-transform": "^1.0.2",
-    "request": "^2.45.0",
+    "browser-request": "^0.3.2",
     "through2": "^0.6.3"
   },
   "repository": {

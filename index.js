@@ -1,4 +1,4 @@
-var request = require('request');
+var request = require('browser-request');
 var through2 = require('through2');
 // accum is like concat-stream, but as an obj stream2.
 var accum = require('accum-transform');
@@ -14,7 +14,7 @@ var getDataFromDoi = function(doi, callback) {
     method: 'GET',
     protocol: 'http:',
     json: 'true'
-  }
+  };
 
   return request(reqOpts, function (error, response, body) {
     if (!error && response.statusCode == 200) {
