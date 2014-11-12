@@ -3,6 +3,8 @@ var through2 = require('through2');
 // accum is like concat-stream, but as an obj stream2.
 var accum = require('accum-transform');
 
+var builder = require('../beagle-builder');
+
 var api = 'http://api.altmetric.com/v1/doi/';
 
 var getDataFromDoi = function(doi, callback) {
@@ -33,19 +35,23 @@ var getDataFromDoiStream = function(doi) {
     uri: api + doi,
     method: 'GET',
     protocol: 'http:'
-  })
+  });
 
   var parse = through2.obj(function (data, enc, done) {
-    this.push(JSON.parse(data))
-    done()
-  })
+    this.push(JSON.parse(data));
+    done();
+  });
 
   // when using pipe in requests, we get raw data. so need to parse it.
   return reqStream
     .pipe(accum())
-    .pipe(parse)
-}
+    .pipe(parse);
+};
 
+var buildHTML = function(JSON, templates) {
+  builder.buildHTML('beagle-altmetrics', JSON, templates);
+};
 
+exports.buildHTML = buildHTML;
 exports.getDataFromDoi = getDataFromDoi;
 exports.getDataFromDoiStream = getDataFromDoiStream;
