@@ -12,7 +12,11 @@
   "dependencies": {
     "accum-transform": "^1.0.2",
     "browser-request": "^0.3.2",
+    "request": "^2.48.0",
     "through2": "^0.6.3"
+  },
+  "browser": {
+    "request": "browser-request"
   },
   "repository": {
     "type": "git",

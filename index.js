@@ -1,9 +1,7 @@
-var request = require('browser-request');
+var request = require('request');
 var through2 = require('through2');
 // accum is like concat-stream, but as an obj stream2.
 var accum = require('accum-transform');
-
-var builder = require('../beagle-builder');
 
 var api = 'http://api.altmetric.com/v1/doi/';
 
@@ -48,10 +46,5 @@ var getDataFromDoiStream = function(doi) {
     .pipe(parse);
 };
 
-var buildHTML = function(JSON, templates) {
-  builder.buildHTML('beagle-altmetrics', JSON, templates);
-};
-
-exports.buildHTML = buildHTML;
 exports.getDataFromDoi = getDataFromDoi;
 exports.getDataFromDoiStream = getDataFromDoiStream;
