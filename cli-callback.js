@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 if (process.argv.length < 2) {
-  console.error("Usage: " + process.argv[1] + " <doi>")
+  console.error('Usage: ' + process.argv[1] + ' <doi>')
   process.exit(-1)
 }
 
@@ -17,7 +17,7 @@ var pretty = function (data) {
 }
 
 // make call as a callback
-altmetrics.getDataFromDoi(doi, function(err, data) {
+altmetrics.getDataFromDoi(doi, function (err, data) {
   if (err != null) {
     console.error(err)
     process.exit(-1)

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 if (process.argv.length < 2) {
-  console.error("Usage: " + process.argv[1] + " <doi>")
+  console.error('Usage: ' + process.argv[1] + ' <doi>')
   process.exit(-1)
 }
 
