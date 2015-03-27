@@ -1,6 +1,6 @@
 {
   "name": "beagle-altmetrics",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Call the altmetric API",
   "main": "index.js",
   "scripts": {
