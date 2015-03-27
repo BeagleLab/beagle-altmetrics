@@ -21,6 +21,8 @@ var getDataFromDoi = function (doi, cb) {
       // body is already parsed (json:true above)
       // need to call the callback we were given.
       cb(null, body)
+    } else {
+      cb('Not connected to the internet.')
     }
   })
 }
