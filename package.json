@@ -28,5 +28,25 @@
   "bugs": {
     "url": "https://github.com/BeagleLab/beagle-altmetrics/issues"
   },
-  "homepage": "https://github.com/BeagleLab/beagle-altmetrics"
+  "homepage": "https://github.com/BeagleLab/beagle-altmetrics",
+  "contributors": [
+    {
+      "name": "Juan Benet",
+      "email": "juan@benet.ai",
+      "url": "https://github.com/jbenet",
+      "contributions": 5,
+      "additions": 149,
+      "deletions": 53373,
+      "hireable": null
+    },
+    {
+      "name": "Richard Littauer",
+      "email": "richard.littauer@gmail.com",
+      "url": "https://github.com/RichardLitt",
+      "contributions": 12,
+      "additions": 53474,
+      "deletions": 69,
+      "hireable": null
+    }
+  ]
 }
